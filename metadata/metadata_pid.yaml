@@ -1,0 +1,351 @@
+P6:
+    str: head of government
+    prompt: The name of the current head of the {} government is
+    question: What is the name of the current head of the {} government?
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the head of the {} government?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the spouse of the head of the {} government?
+          hop_PIDs: [P26, P27]
+P35:
+    str: head of state
+    prompt: The name of the current head of state in {} is
+    question: What is the name of the current head of state in {}?
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the head of state in {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the spouse of the head of state in {}?
+          hop_PIDs: [P26, P27]
+P159:
+    str: headquarters location
+    prompt: The headquarters of {} is located in the city of
+    question: Which city is the headquarter of {} located in?
+    wiki: [subject]
+    multihop:
+        - question: Who is the head of government of the city where the headquarter of {} is located?
+          hop_PIDs: [P6]
+        - question: Who is the spouse of the head of government of the city where the headquarter of {} is located?
+          hop_PIDs: [P6, P26]
+
+P169:
+    str: chief executive officer
+    prompt: "The chief executive officer of {} is"
+    question: "Who is the chief executive officer of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the chief executive officer of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the chief executive officer of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the chief executive officer of {}?
+          hop_PIDs: [P26, P27]
+P286:
+    str: head coach
+    prompt: "The head coach of {} is"
+    question: "Who is the head coach of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the head coach of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the head coach of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the head coach of {}?
+          hop_PIDs: [P26, P27]
+P1037:
+    str: director / manager
+    prompt: "The director/manager of {} is"
+    question: "Who is the director/manager of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the director/manager of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the director/manager of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the director/manager of {}?
+          hop_PIDs: [P26, P27]
+P1416:
+    str: affiliation
+    prompt: "{} is affiliated to"
+    question: "What is {} affiliated to?"
+    wiki: [subject]
+    multihop:
+        - question: What is the location of the affiliation of {}?
+          hop_PIDs: [P276]
+        - question: What is the headquarter of the affiliation of {}?
+          hop_PIDs: [P159]
+        - question: Who is the head of the government of the affiliation of {}?
+          hop_PIDs: [P6]
+P54:
+    str: member of sports team
+    prompt: "{} is a member of sports team"
+    question: "What sports team is {} a member of?"
+    wiki: [subject]
+    multihop:
+        - question: What is the location of the sports team that {} is a member of?
+          hop_PIDs: [P276]
+        - question: What is the headquarter of the sports team that {} is a member of?
+          hop_PIDs: [P159]
+        - question: Who is the head coach of the sports team that {} is a member of?
+          hop_PIDs: [P286]
+        - question: Who is the coach of the sports team that {} is a member of?
+          hop_PIDs: [P6087]
+        - question: What is the home venue of the sports team that {} is a member of?
+          hop_PIDs: [P115]
+        - question: Who is the team captain of the sports team that {} is a member of?
+          hop_PIDs: [P634]
+        - question: What league is the sports team that {} is a member of in?
+          hop_PIDs: [P118]
+        - question: What is the country of citizenship of the head coach of the sports team that {} is a member of?
+          hop_PIDs: [P286, P27]
+        - question: Who is the spouse of the head coach of the sports team that {} is a member of?
+          hop_PIDs: [P286, P26]
+        - question: Who is the head of government of the home venue of the sports team that {} is a member of?
+          hop_PIDs: [P115, P6]
+        - question: What is the country of citizenship of the team captain of the sports team that {} is a member of?
+          hop_PIDs: [P634, P27]
+P488:
+    str: chairperson
+    prompt: "The chairperson of {} is"
+    question: "Who is the chairperson of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the chairperson of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the chairperson of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the chairperson of {}?
+          hop_PIDs: [P26, P27]
+P3975:
+    str: general secretary
+    prompt: "The general secretary of {} is"
+    question: "Who is the general secretary of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the general secretary of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the general secretary of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the general secretary of {}?
+          hop_PIDs: [P26, P27]
+P26:
+    str: spouse
+    prompt: "The spouse of {} is"
+    question: "Who is the spouse of {}?"
+    wiki: [object]
+    multihop:
+        - question: What is the country of citizenship of the spouse of {}?
+          hop_PIDs: [P27]
+P39:
+    str: position held
+    prompt: "The position held by {} is"
+    question: "What is the position held by {}?"
+    wiki: [subject]
+P118:
+    str: league
+    prompt: "{} is in the league of"
+    question: "What league is {} in?"
+    wiki: [subject]
+    multihop:
+        - question: What is the location of the league that {} is in?
+          hop_PIDs: [P276]
+        - question: What is the headquarter of the league that {} is in?
+          hop_PIDs: [P159]
+P102:
+    str: member of political party
+    prompt: "{} is a member of political party"
+    question: "What political party is {} a member of?"
+    wiki: [subject]
+
+P463:
+    str: member of
+    prompt: "{} is a member of"
+    question: "What organization is {} a member of?"
+    wiki: [subject]
+    multihop:
+        - question: What is the location of the organization that {} is a member of?
+          hop_PIDs: [P276]
+        - question: What is the headquarter of the organization that {} is a member of?
+          hop_PIDs: [P159]
+
+P6087:
+    str: coach of sports team
+    prompt: "{} is the coach of sports team"
+    question: "What sports team is {} a coach of?"
+    wiki: [subject]
+    multihop:
+        - question: What is the location of the sports team that {} is a coach of?
+          hop_PIDs: [P276]
+P137:
+    str: operator
+    prompt: "The operator of {} is"
+    question: "What is the operator of {}?"
+    wiki: [subject]
+P276:
+    str: location
+    prompt: "The location of {} is"
+    question: "What is the location of {}?"
+    wiki: [subject]
+
+P449:
+    str: original broadcaster
+    prompt: "The original broadcaster of {} is"
+    question: "What is the original broadcaster of {}?"
+    wiki: [subject]
+P1075:
+    str: rector
+    prompt: "The rector of {} is"
+    question: "Who is the rector of {}?"
+    wiki: [object]
+
+P4791:
+    str: commanded by
+    prompt: "{} is commanded by"
+    question: "Who is {} commanded by?"
+    wiki: [object]
+
+P176:
+    str: manufacturer
+    prompt: "The manufacturer of {} is"
+    question: "What is the manufacturer of {}?"
+    wiki: [subject]
+    multihop:
+        - question: What is the headquarter of the manufacturer of {}?
+          hop_PIDs: [P159]
+
+P5769:
+    str: editor-in-chief 
+    prompt: "The editor-in-chief of {} is"
+    question: "Who is the editor-in-chief of {}?"
+    wiki: [object]
+
+
+
+P1308:
+    str: Officeholder
+    prompt: "The officeholder of {} is"
+    question: "Who is the officeholder of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the officeholder of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the officeholder of {}?
+          hop_PIDs: [P27]
+P69:
+    str: educated at
+    prompt: "{} is educated at"
+    question: "What university is {} educated at?"
+    wiki: [subject]
+
+P749:
+    str: parent organization
+    prompt: "The parent organization of {} is"
+    question: "What is the parent organization of {}?"
+    wiki: [subject]
+P371:
+    str: presenter
+    prompt: "The presenter of {} is"
+    question: "Who is the presenter of {}?"
+    wiki: [object]
+P106:
+    str: occupation
+    prompt: "The occupation of {} is"
+    question: "What is the occupation of {}?"
+    wiki: [subject]
+
+P1532:
+    str: country for sport
+    prompt: "The country for sport of {} is"
+    question: "What is country for sport of {}?"
+    wiki: [subject]
+P195:
+    str: collection
+    prompt: "{} is collected at"
+    question: "Where is {} collected?"
+    wiki: [subject]
+
+P551:
+    str: residence
+    prompt: "The residence of {} is"
+    question: "What is the residence of {}?"
+    wiki: [subject]
+
+P115:
+    str: home venue
+    prompt: "The home venue of {} is"
+    question: "What is the home venue of {}?"
+    wiki: [subject]
+
+
+P98:
+    str: editor
+    prompt: "The editor of {} is"
+    question: "Who is the editor of {}?"
+    wiki: [object]
+
+P27:
+    str: country of citizenship
+    prompt: "The country of citizenship of {} is"
+    question: "What is the country of citizenship of {}?"
+    wiki: [subject]
+    multihop:
+        - question: Who is the head of government of the country of citizenship of {}?
+          hop_PIDs: [P6]
+        - question: Who is the head of state of the country of citizenship of {}?
+          hop_PIDs: [P35]
+P634:
+    str: team captain
+    prompt: "The team captain of {} is"
+    question: "Who is the team captain of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the team captain of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the team captain of {}?
+          hop_PIDs: [P27]
+
+P210:
+    str: party chief representative
+    prompt: "The party chief representative of {} is"
+    question: "Who is the party chief representative of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the party chief representative of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the party chief representative of {}?
+          hop_PIDs: [P27]
+P36:
+    str: capital
+    prompt: "The capital of {} is"
+    question: "What is the capital of {}?"
+    wiki: [subject]
+    multihop:
+        - question: Who is the head of government of the capital of {}?
+          hop_PIDs: [P6]
+        - question: Who is the head of state of the capital of {}?
+          hop_PIDs: [P35]
+
+P272:
+    str: production company
+    prompt: "The production company of {} is"
+    question: "What is the production company of {}?"
+    wiki: [subject]
+    multihop:
+        - question: What is the headquarter of the production company of {}?
+          hop_PIDs: [P159]
+        - question: What is the location of the production company of {}?
+          hop_PIDs: [P276]
+
+P505:
+    str: general manager
+    prompt: "The general manager of {} is"
+    question: "Who is the general manager of {}?"
+    wiki: [object]
+    multihop:
+        - question: Who is the spouse of the general manager of {}?
+          hop_PIDs: [P26]
+        - question: What is the country of citizenship of the general manager of {}?
+          hop_PIDs: [P27]
+        - question: What is the country of citizenship of the spouse of the general manager of {}?
+          hop_PIDs: [P26, P27]
