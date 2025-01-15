@@ -1,0 +1,12 @@
+llm_params:
+    model_name: meta-llama/Llama-2-7b-chat-hf
+    max_length: 3500
+
+    temperature: 1.0
+    num_beams: 1
+    do_sample: false
+
+batch_size: 1
+
+QA_task: !include ./configs/prompts/prompt-gen.yaml
+MC_task: !include ./configs/prompts/prompt-multichoice.yaml

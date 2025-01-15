@@ -13,6 +13,18 @@ Install the requirements:
     ujson
     pyyaml-include==1.3.2
 
+    # The below requirements are for LLM evaluation. Ignore them if only building benchmarks.
+    torch==2.4.0
+    transformers==4.43.2
+    pyyaml-include==1.3.2
+    einops==0.8.0
+    accelerate==0.33.0
+    protobuf==3.20.0
+    sentencepiece==0.2.0
+    flash_attn==2.6.3
+    fastchat==0.1.0
+
+
 Follow the steps below to build a benchmark:
 
 1. Download a Wikidata dump.
@@ -37,6 +49,13 @@ Follow the steps below to build a benchmark:
 
     The constructed samples will be under `./data/en_2022-01-01_2023-01-01`.
 
+
+
+## Evaluate LLMs
+
+We provide a shell script to evaluate LLMs. For example,
+
+    ./scripts/run.sh ./releases/en_20220101_20230101/singlehop-gold.json ./configs/llama-2-7b-chat.yaml
 
 
 ## Contact

@@ -1,0 +1,9 @@
+max_new_tokens: 5
+prompt_template: |-
+    You are given an article, a question, and four options. Select one option to answer the question based on the given article. Only give the option (A, B, C, or D), and do not output any other words.
+
+    Article: {context}
+
+    Question: {input}
+
+    Answer:

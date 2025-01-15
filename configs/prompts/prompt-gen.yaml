@@ -1,0 +1,9 @@
+max_new_tokens: 128
+prompt_template: |-
+    You are given an article and a question. Answer the question based on the given article as concisely as you can, using a single phrase or sentence if possible. Do not provide any explanation.
+
+    Article: {context}
+
+    Question: {input}
+
+    Answer:
