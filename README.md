@@ -1,8 +1,8 @@
-# AntiLeak-Bench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge
+# ACL 2025 (SAC Highlights) - AntiLeakBench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge
 
 [![arXiv](https://img.shields.io/badge/arXiv-2412.13670-<COLOR>.svg)](https://arxiv.org/pdf/2412.13670.pdf)
 
-This repo contains the data and code of our work [AntiLeak-Bench](https://arxiv.org/pdf/2412.13670).
+This repo contains the data and code of our work [AntiLeakBench](https://arxiv.org/pdf/2412.13670).
 We have provided the used test samples at [`./releases`](./releases).
 
 
@@ -65,9 +65,18 @@ We provide a shell script to evaluate LLMs. For example,
 
 ## Citation
 
-    @article{wu2024antileak,
-        title={AntiLeak-Bench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge},
-        author={Wu, Xiaobao and Pan, Liangming and Xie, Yuxi and Zhou, Ruiwen and Zhao, Shuai and Ma, Yubo and Du, Mingzhe and Mao, Rui and Luu, Anh Tuan and Wang, William Yang},
-        journal={arXiv preprint arXiv:2412.13670},
-        year={2024}
-    }
+```bibtex
+@inproceedings{wu2025antileak,
+    title = "{A}nti{L}eak{B}ench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge",
+    author = "Wu, Xiaobao  and Pan, Liangming  and Xie, Yuxi  and Zhou, Ruiwen  and Zhao, Shuai  and Ma, Yubo  and Du, Mingzhe  and Mao, Rui  and Luu, Anh Tuan  and Wang, William Yang"
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.901/",
+    doi = "10.18653/v1/2025.acl-long.901",
+    pages = "18403--18419",
+    ISBN = "979-8-89176-251-0"
+}
+```
