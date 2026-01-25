@@ -68,7 +68,7 @@ We provide a shell script to evaluate LLMs. For example,
 ```bibtex
 @inproceedings{wu2025antileak,
     title = "{A}nti{L}eak{B}ench: Preventing Data Contamination by Automatically Constructing Benchmarks with Updated Real-World Knowledge",
-    author = "Wu, Xiaobao  and Pan, Liangming  and Xie, Yuxi  and Zhou, Ruiwen  and Zhao, Shuai  and Ma, Yubo  and Du, Mingzhe  and Mao, Rui  and Luu, Anh Tuan  and Wang, William Yang"
+    author = "Wu, Xiaobao  and Pan, Liangming  and Xie, Yuxi  and Zhou, Ruiwen  and Zhao, Shuai  and Ma, Yubo  and Du, Mingzhe  and Mao, Rui  and Luu, Anh Tuan  and Wang, William Yang",
     booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     month = jul,
     year = "2025",
